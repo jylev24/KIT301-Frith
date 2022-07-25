@@ -103,7 +103,8 @@ class _SecurityGuardsState extends State<SecurityGuards> {
                           width: 150,
                           height: 100,
                           child: Icon(
-                            Icons.event_note_rounded,
+                            //change notepad icon
+                            Icons.edit_note,
                             color: Colors.white,
                             size: 80,
                           ))),
