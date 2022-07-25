@@ -114,22 +114,7 @@ class _SecurityGuardsState extends State<SecurityGuards> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  //emergency function
-                  GestureDetector(
-                    onTap: () {
-                      launch('tel:000');
-                    },
-                    child: Container(
-                        //alignment: Alignment.centerLeft,
-                        color: Colors.blueAccent,
-                        width: 150,
-                        height: 100,
-                        child: Icon(
-                          Icons.warning_amber_outlined,
-                          color: Colors.white,
-                          size: 80,
-                        )),
-                  ),
+                  //request back up
                   GestureDetector(
                     onTap: () {
                       /*
@@ -146,6 +131,22 @@ class _SecurityGuardsState extends State<SecurityGuards> {
                         color: Colors.blueAccent,
                         child: Icon(
                           Icons.time_to_leave_outlined, //request back up
+                          color: Colors.white,
+                          size: 80,
+                        )),
+                  ),
+                   //emergency function
+                  GestureDetector(
+                    onTap: () {
+                      launch('tel:000');
+                    },
+                    child: Container(
+                        //alignment: Alignment.centerLeft,
+                        color: Colors.blueAccent,
+                        width: 150,
+                        height: 100,
+                        child: Icon(
+                          Icons.warning_amber_outlined,
                           color: Colors.white,
                           size: 80,
                         )),
